@@ -54,7 +54,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Nov 18 08:56:54 CET 2013'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Feb 24 23:53:23 CET 2014'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -875,7 +875,28 @@
         </UML:Generalization>
         <UML:Class xmi.id = '10-32--38--41--22c77b94:1425bc14760:-8000:0000000000000B27'
           name = 'Bonus' visibility = 'public' isSpecification = 'false' isRoot = 'false'
-          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'>
+          <UML:Classifier.feature>
+            <UML:Operation xmi.id = '127-0-0-1-29d9a0f6:14466131af7:-8000:0000000000000BA1'
+              name = 'newOperation' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+              isQuery = 'false' concurrency = 'sequential' isRoot = 'false' isLeaf = 'false'
+              isAbstract = 'false'>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id = '127-0-0-1-29d9a0f6:14466131af7:-8000:0000000000000BA2'
+                  name = 'return' isSpecification = 'false' kind = 'return'/>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id = '127-0-0-1-29d9a0f6:14466131af7:-8000:0000000000000BA3'
+              name = 'newOperation' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+              isQuery = 'false' concurrency = 'sequential' isRoot = 'false' isLeaf = 'false'
+              isAbstract = 'false'>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id = '127-0-0-1-29d9a0f6:14466131af7:-8000:0000000000000BA4'
+                  name = 'return' isSpecification = 'false' kind = 'return'/>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+          </UML:Classifier.feature>
+        </UML:Class>
         <UML:Association xmi.id = '10-32--38--41--22c77b94:1425bc14760:-8000:0000000000000B28'
           name = 'hasScalarBonification' isSpecification = 'false' isRoot = 'false'
           isLeaf = 'false' isAbstract = 'false'>
@@ -1143,10 +1164,10 @@
               visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
               aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
               <UML:AssociationEnd.multiplicity>
-                <UML:Multiplicity xmi.id = '10-32--38--41--22c77b94:1425bc14760:-8000:0000000000000B63'>
+                <UML:Multiplicity xmi.id = '127-0-0-1-29d9a0f6:14466131af7:-8000:0000000000000BA8'>
                   <UML:Multiplicity.range>
-                    <UML:MultiplicityRange xmi.id = '10-32--38--41--22c77b94:1425bc14760:-8000:0000000000000B62'
-                      lower = '1' upper = '1'/>
+                    <UML:MultiplicityRange xmi.id = '127-0-0-1-29d9a0f6:14466131af7:-8000:0000000000000BA7'
+                      lower = '0' upper = '1'/>
                   </UML:Multiplicity.range>
                 </UML:Multiplicity>
               </UML:AssociationEnd.multiplicity>
@@ -1625,6 +1646,14 @@
             <UML:AssociationEnd xmi.id = '10-32--38--41--22c77b94:1425bc14760:-8000:0000000000000BA3'
               visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
               aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
+              <UML:AssociationEnd.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-0-1-29d9a0f6:14466131af7:-8000:0000000000000BA6'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-0-1-29d9a0f6:14466131af7:-8000:0000000000000BA5'
+                      lower = '0' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:AssociationEnd.multiplicity>
               <UML:AssociationEnd.participant>
                 <UML:Class xmi.idref = '10-32--38--41--22c77b94:1425bc14760:-8000:0000000000000B8F'/>
               </UML:AssociationEnd.participant>
@@ -6725,7 +6754,7 @@
     </group>
   </group>
   <group name="Fig47"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[472, 189, 66, 67]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[472, 189, 66, 46]pathVisible=false;stereotypeView=0;operationsVisible=false;attributesVisible=true;"
        href="10-32--38--41--22c77b94:1425bc14760:-8000:0000000000000B8D"
        fill="1"
        fillcolor="255 255 200"
@@ -6739,7 +6768,7 @@
       x="472"
       y="189"
       width="66"
-      height="67"
+      height="46"
       fill="1"
       fillcolor="255 255 200"
       stroke="1"
@@ -6825,6 +6854,7 @@
       fillcolor="black"
       stroke="1"
       strokecolor="black"
+      visibility="0"
     />
     <group name="Fig47.6"
          description="org.argouml.uml.diagram.ui.FigOperationsCompartment[473, 235, 64, 21]"
@@ -6833,6 +6863,7 @@
          fillcolor="255 255 200"
          stroke="0"
          strokecolor="black"
+         visibility="0"
     >
       <private>
       </private>
@@ -6846,6 +6877,7 @@
         fillcolor="white"
         stroke="0"
         strokecolor="black"
+        visibility="0"
       />
     </group>
   </group>
@@ -7523,8 +7555,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"
                         ownerhref="10-32--38--41--22c77b94:1425bc14760:-8000:0000000000000BA3"
-                        angle="225.0"
-                        offset="5" />
+                        angle="-129.0"
+                        offset="20" />
       <argouml:pathitem figname="Fig59.5"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigAssociationEndAnnotation"
