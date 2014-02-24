@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Stat Calculator</title>
+		
+	</head>
+	
+	<body>
+		<script type="text/javascript" src="objects.js"></script>
+		<script type="text/javascript" src="dades.js"></script>
+		<script type="text/javascript">
+			var c = new Character();
+			c.basicStats.pAttack = 100;
+			c.buffs = [allBuffs["Might 1"]];
+			c.leftWeapon = allWeapons["Tallum Blade"];
+			document.write(JSON.stringify(c) + "<br/>");
+			c.calculate();
+			document.write(JSON.stringify(c.calculatedStats) + "<br/>");
+			document.write(c.hasEquiped("Tallum Blade"));
+		</script>
+	</body>
+</html>

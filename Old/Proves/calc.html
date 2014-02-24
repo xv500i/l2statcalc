@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Stat Calculator</title>
+		
+	</head>
+	
+	<body onload="populate()">
+		<script type="text/javascript" src="objects.js"></script>
+		<script type="text/javascript" src="dades.js"></script>
+		<script type="text/javascript">
+			c = new Character();
+			function populate() {
+				var select = document.getElementById("weapons");
+				var names = Object.keys(allWeapons);
+				for(var i = 0; i < names.length; i++) {
+					var n = allWeapons[ names[i] ].name;
+					select.options.add(new Option(n, n));
+				}
+				var buffs = document.getElementById("buffs");
+				var names = Object.keys(allBuffs);
+				for(var i = 0; i < names.length; i++) {
+					var n = allBuffs[ names[i] ].name;
+					var checkbox = document.createElement('input');
+					checkbox.type = "checkbox";
+					checkbox.name = "buffs";
+					checkbox.value = n;
+					checkbox.id = n;
+
+					var label = document.createTextNode(n)
+					buffs.appendChild(label);					
+					buffs.appendChild(checkbox);
+				}
+			}
+			function updateInfo() {
+				var sel = document.getElementById("weapons").value;
+				c.leftWeapon = allWeapons[sel];
+				var element = document.getElementById("info");
+				element.innerHTML = sel + "<br/>" + JSON.stringify(c);
+			}
+			
+		</script>
+		<select id="weapons" onchange="updateInfo()">
+		</select> 
+		<div id="buffs"></div>
+		<div id="info"></div>
+		
+		
+	</body>
+</html>
