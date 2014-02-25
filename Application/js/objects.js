@@ -1,4 +1,4 @@
-function Stadistics(stateArray) {
+function Statistics(stateArray) {
 	this.cp = 0;
 	this.maxCp = 0;
 	this.hp = 0;
@@ -26,6 +26,12 @@ function Stadistics(stateArray) {
 	this.STR = 0;
 	this.DEX = 0;
 	this.WIT = 0;
+	this.fire = 0;
+	this.water = 0;
+	this.wind = 0;
+	this.earth = 0;
+	this.dark = 0;
+	this.holy = 0;
 	if (stateArray != undefined) {
 		for (var index in stateArray) {
 			this[index] = stateArray[index];
@@ -33,22 +39,24 @@ function Stadistics(stateArray) {
 	}
 }
 
-Stadistics.prototype.combine = function(anotherStat) {
+Statistics.prototype.combine = function(anotherStat) {
 	var fields = ["cp", "maxCp", "mp", "maxMp", "hp", "maxHp", "pAttack"];
 	for (var i = 0; i < fields.length; i++) {
 		this[fields[i]] += anotherStat[fields[i]];
 	}
 }
 
-Stadistics.prototype.combineProportional = function(anotherStat) {
+Statistics.prototype.combineProportional = function(anotherStat) {
 	var fields = ["cp", "maxCp", "mp", "maxMp", "hp", "maxHp", "pAttack"];
 	for (var i = 0; i < fields.length; i++) {
 		this[fields[i]] *= (1 + anotherStat[fields[i]]/100);
 	}
 }
 
+/*
+
 function Character() {
-	this.basicStats = new Stadistics({});
+	this.basicStats = new Statistics({});
 	
 	this.calculatedStats = null;
 	this.leftWeapon = null;
@@ -72,20 +80,20 @@ function Character() {
 }
 
 Character.prototype.calculate = function() {
-	var c = new Stadistics({});
-	var p = new Stadistics({});
+	var c = new Statistics({});
+	var p = new Statistics({});
 	var eqs = [this.leftWeapon, this.rightWeapon, this.helmet, this.boots, this.body, this.legs, this.gloves, this.necklace, this.leftRing, this.rightRing, this.leftEarng, this.rightEaring];
 	for(var i = 0; i < eqs.length; i++) {
 		var eq = eqs[i];
 		if (eq != null) {
-			c.combine(eq.stadisticsAdded);
-			p.combine(eq.stadisticsProportional);
+			c.combine(eq.StatisticsAdded);
+			p.combine(eq.StatisticsProportional);
 		}
 	}
 	for(var i = 0; i < this.buffs.length; i++) {
 		var eq = this.buffs[i];
-		c.combine(eq.stadisticsAdded);
-		p.combine(eq.stadisticsProportional);		
+		c.combine(eq.StatisticsAdded);
+		p.combine(eq.StatisticsProportional);		
 	}
 	
 	// check buffs
@@ -109,6 +117,7 @@ Character.prototype.hasEquiped = function(name) {
 	}
 	return b;
 }
+*/
 
 /*
 function Skill() {
@@ -128,10 +137,15 @@ function PasiveSkill() {
 PasiveSkill.prototype = Object.create(Skill.prototype);
 */
 
-function AlteredState(name, stadisticsAdded, stadisticsProportional, conditions) {
+function Bonus(statisticsAdded, statisticsProportional) {
+	this.statisticsAdded = statisticsAdded;
+	this.statisticsProportional = statisticsProportional;
+}
+
+function AlteredState(name, type, statisticsAdded, statisticsProportional, conditions) {
 	this.name = name;
-	this.stadisticsAdded = stadisticsAdded;
-	this.stadisticsProportional = stadisticsProportional;
+	this.type = type;
+	this.bonus = new Bonus(statisticsAdded, statisticsProportional);
 	this.conditions = conditions;
 }
 
@@ -166,47 +180,49 @@ SetEquipmentCondition.prototype.isSatisfied = function(character) {
 	return b;
 }
 
-function Buff(name, stadisticsAdded, stadisticsProportional, condition) {
-	AlteredState.call(this, name, stadisticsAdded, stadisticsProportional, condition);
+/*
+function Buff(name, StatisticsAdded, StatisticsProportional, condition) {
+	AlteredState.call(this, name, StatisticsAdded, StatisticsProportional, condition);
 }
 
 Buff.prototype = Object.create(AlteredState.prototype);
 
-function Debuff(name, stadisticsAdded, stadisticsProportional, condition) {
-	AlteredState.call(this, name, stadisticsAdded, stadisticsProportional, condition);
+function Debuff(name, StatisticsAdded, StatisticsProportional, condition) {
+	AlteredState.call(this, name, StatisticsAdded, StatisticsProportional, condition);
 }
 
 Debuff.prototype = Object.create(AlteredState.prototype);
 
 function PasiveSkill() {
-	AlteredState.call(this, name, stadisticsAdded, stadisticsProportional, condition);
+	AlteredState.call(this, name, StatisticsAdded, StatisticsProportional, condition);
 }
 
 PasiveSkill.prototype = Object.create(AlteredState.prototype);
 
-function Equipment(name, grade, stadisticsAdded, stadisticsProportional) {
+function Equipment(name, grade, StatisticsAdded, StatisticsProportional) {
 	this.name = name;
 	this.grade = grade;
-	this.stadisticsAdded = stadisticsAdded;
-	this.stadisticsProportional = stadisticsProportional;
+	this.StatisticsAdded = StatisticsAdded;
+	this.StatisticsProportional = StatisticsProportional;
 }
 
-function Weapon(name, grade, stadisticsAdded, stadisticsProportional, attackSpeed, type) {
-	Equipment.call(this, name, grade, stadisticsAdded, stadisticsProportional);
+function Weapon(name, grade, StatisticsAdded, StatisticsProportional, attackSpeed, type) {
+	Equipment.call(this, name, grade, StatisticsAdded, StatisticsProportional);
 	this.attackSpeed = attackSpeed;
 	this.type = type;
 }
 
 Weapon.prototype = Object.create(Equipment.prototype);
 
-function Armor(name, grade, stadisticsAdded, stadisticsProportional) {
-	Equipment.call(this, name, grade, stadisticsAdded, stadisticsProportional);
+function Armor(name, grade, StatisticsAdded, StatisticsProportional) {
+	Equipment.call(this, name, grade, StatisticsAdded, StatisticsProportional);
 }
 
 Armor.prototype = Object.create(Equipment.prototype);
 
-function Jewelry(name, grade, stadisticsAdded, stadisticsProportional) {
-	Equipment.call(this, name, grade, stadisticsAdded, stadisticsProportional);
+function Jewelry(name, grade, StatisticsAdded, StatisticsProportional) {
+	Equipment.call(this, name, grade, StatisticsAdded, StatisticsProportional);
 }
 
-Jewelry.prototype = Object.create(Equipment.prototype);
+Jewelry.prototype = Object.create(Equipment.prototype); 
+*/
