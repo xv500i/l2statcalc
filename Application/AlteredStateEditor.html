@@ -36,8 +36,8 @@
 				<legend>General info</legend>
 				<label for="name">Name:</label><input type="text" id="name" required="required" autofocus="autofocus"/>
 				<label for="type">Type:</label><select id="type" ><option>Buff</option><option>Debuff</option><option>Toogle</option><option>Dance</option><option>Song</option></select>
-				<label for="stack-group">Stack group:</label><input type="number" id="stack-group" required="required" size="5" value="-1" />
-				<label for="stack-order">Stack order:</label><input type="number" id="stack-order" required="required" size="5" value="-1" />
+				<label for="stack-group">Stack group:</label><input type="number" id="stack-group" required="required" size="5" value="0" />
+				<label for="stack-order">Stack order:</label><input type="number" id="stack-order" required="required" size="5" value="0" />
 			</fieldset>
 			<fieldset>
 				<legend>Statistics added</legend>
@@ -74,38 +74,39 @@
 			</fieldset>
 			<fieldset>
 				<legend>Statistics proportional</legend>
-				<label for="maxCp">Max CP:</label><input type="number" id="maxCp" required="required" size="5" value="0" />
-				<label for="maxHp">Max HP:</label><input type="number" id="maxHp" required="required" size="5" value="0" />
-				<label for="maxMp">Max MP:</label><input type="number" id="maxMp" required="required" size="5" value="0" />
-				<label for="pAttack">Physical attack:</label><input type="number" id="pAttack" required="required" size="5" value="0" />
-				<label for="mAttack">Magical attack:</label><input type="number" id="mAttack" required="required" size="5" value="0" />
-				<label for="speed">Walking speed:</label><input type="number" id="speed" required="required" size="5" value="0" />
-				<label for="pSpeed">Attack speed:</label><input type="number" id="pSpeed" required="required" size="5" value="0" />
-				<label for="cSpeed">Casting speed:</label><input type="number" id="cSpeed" required="required" size="5" value="0" />
-				<label for="pCriticChance">Physical critical chance:</label><input type="number" id="pCriticChance" required="required" size="5" value="0" />
-				<label for="mCriticChance">Magical critical chance:</label><input type="number" id="mCriticChance" required="required" size="5" value="0" />
-				<label for="pCriticDamage">Physical critical damage:</label><input type="number" id="pCriticDamage" required="required" size="5" value="0" />
-				<label for="mCriticDamage">Magical critical damage:</label><input type="number" id="mCriticDamage" required="required" size="5" value="0" />
-				<label for="pDefense">Physical defense:</label><input type="number" id="pDefense" required="required" size="5" value="0" />
-				<label for="mDefense">Magic defense:</label><input type="number" id="mDefense" required="required" size="5" value="0" />
-				<label for="pEvasion">Physical evasion:</label><input type="number" id="pEvasion" required="required" size="5" value="0" />
-				<label for="mEvasion">Magic evasion:</label><input type="number" id="mEvasion" required="required" size="5" value="0" />
-				<label for="pAccuracy">Physical accuracy:</label><input type="number" id="pAccuracy" required="required" size="5" value="0" />
-				<label for="mAccuracy">Magic accuracy:</label><input type="number" id="mAccuracy" required="required" size="5" value="0" />
-				<label for="INT">INT:</label><input type="number" id="INT" required="required" size="5" value="0" />
-				<label for="MEN">MEN:</label><input type="number" id="MEN" required="required" size="5" value="0" />
-				<label for="WIT">WIT:</label><input type="number" id="WIT" required="required" size="5" value="0" />
-				<label for="CON">CON:</label><input type="number" id="CON" required="required" size="5" value="0" />
-				<label for="DEX">DEX:</label><input type="number" id="DEX" required="required" size="5" value="0" />
-				<label for="STR">STR:</label><input type="number" id="STR" required="required" size="5" value="0" />
-				<label for="fire">fire:</label><input type="number" id="fire" required="required" size="5" value="0" />
-				<label for="water">water:</label><input type="number" id="water" required="required" size="5" value="0" />
-				<label for="wind">wind:</label><input type="number" id="wind" required="required" size="5" value="0" />
-				<label for="earth">earth:</label><input type="number" id="earth" required="required" size="5" value="0" />
-				<label for="dark">dark:</label><input type="number" id="dark" required="required" size="5" value="0" />
-				<label for="holy">holy:</label><input type="number" id="holy" required="required" size="5" value="0" />
+				<label for="maxCp_">Max CP:</label><input type="number" id="maxCp_" required="required" size="5" value="0" />
+				<label for="maxHp_">Max HP:</label><input type="number" id="maxHp_" required="required" size="5" value="0" />
+				<label for="maxMp_">Max MP:</label><input type="number" id="maxMp_" required="required" size="5" value="0" />
+				<label for="pAttack_">Physical attack:</label><input type="number" id="pAttack_" required="required" size="5" value="0" />
+				<label for="mAttack_">Magical attack:</label><input type="number" id="mAttack_" required="required" size="5" value="0" />
+				<label for="speed_">Walking speed:</label><input type="number" id="speed_" required="required" size="5" value="0" />
+				<label for="pSpeed_">Attack speed:</label><input type="number" id="pSpeed_" required="required" size="5" value="0" />
+				<label for="cSpeed_">Casting speed:</label><input type="number" id="cSpeed_" required="required" size="5" value="0" />
+				<label for="pCriticChance_">Physical critical chance:</label><input type="number" id="pCriticChance_" required="required" size="5" value="0" />
+				<label for="mCriticChance_">Magical critical chance:</label><input type="number" id="mCriticChance_" required="required" size="5" value="0" />
+				<label for="pCriticDamage_">Physical critical damage:</label><input type="number" id="pCriticDamage_" required="required" size="5" value="0" />
+				<label for="mCriticDamage_">Magical critical damage:</label><input type="number" id="mCriticDamage_" required="required" size="5" value="0" />
+				<label for="pDefense_">Physical defense:</label><input type="number" id="pDefense_" required="required" size="5" value="0" />
+				<label for="mDefense_">Magic defense:</label><input type="number" id="mDefense_" required="required" size="5" value="0" />
+				<label for="pEvasion_">Physical evasion:</label><input type="number" id="pEvasion_" required="required" size="5" value="0" />
+				<label for="mEvasion_">Magic evasion:</label><input type="number" id="mEvasion_" required="required" size="5" value="0" />
+				<label for="pAccuracy_">Physical accuracy:</label><input type="number" id="pAccuracy_" required="required" size="5" value="0" />
+				<label for="mAccuracy_">Magic accuracy:</label><input type="number" id="mAccuracy_" required="required" size="5" value="0" />
+				<label for="INT_">INT:</label><input type="number" id="INT_" required="required" size="5" value="0" />
+				<label for="MEN_">MEN:</label><input type="number" id="MEN_" required="required" size="5" value="0" />
+				<label for="WIT_">WIT:</label><input type="number" id="WIT_" required="required" size="5" value="0" />
+				<label for="CON_">CON:</label><input type="number" id="CON_" required="required" size="5" value="0" />
+				<label for="DEX_">DEX:</label><input type="number" id="DEX_" required="required" size="5" value="0" />
+				<label for="STR_">STR:</label><input type="number" id="STR_" required="required" size="5" value="0" />
+				<label for="fire_">fire:</label><input type="number" id="fire_" required="required" size="5" value="0" />
+				<label for="water_">water:</label><input type="number" id="water_" required="required" size="5" value="0" />
+				<label for="wind_">wind:</label><input type="number" id="wind_" required="required" size="5" value="0" />
+				<label for="earth_">earth:</label><input type="number" id="earth_" required="required" size="5" value="0" />
+				<label for="dark_">dark:</label><input type="number" id="dark_" required="required" size="5" value="0" />
+				<label for="holy_">holy:</label><input type="number" id="holy_" required="required" size="5" value="0" />
 			</fieldset>
 		</form>
+		<button onclick="addStateToList(); return false;">Create</button>
 	</div>
 	<div id="created">
 		<h2>Altered states created</h2>

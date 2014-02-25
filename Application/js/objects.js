@@ -39,17 +39,17 @@ function Statistics(stateArray) {
 	}
 }
 
+Statistics.fields = ["cp", "maxCp", "hp", "maxHp", "mp", "maxMp", "pAttack", "mAttack", "speed", "pSpeed", "cSpeed", "pCriticChance", "mCriticChance", "pCriticDamage", "mCriticDamage", "pDefense", "mDefense", "pEvasion", "mEvasion", "pAccuracy", "mAccuracy", "INT", "MEN", "CON", "STR", "DEX", "WIT", "fire", "water", "wind", "earth", "dark", "holy"];
+
 Statistics.prototype.combine = function(anotherStat) {
-	var fields = ["cp", "maxCp", "mp", "maxMp", "hp", "maxHp", "pAttack"];
-	for (var i = 0; i < fields.length; i++) {
-		this[fields[i]] += anotherStat[fields[i]];
+	for (var i = 0; i < Statistics.fields.length; i++) {
+		this[Statistics.fields[i]] += anotherStat[Statistics.fields[i]];
 	}
 }
 
 Statistics.prototype.combineProportional = function(anotherStat) {
-	var fields = ["cp", "maxCp", "mp", "maxMp", "hp", "maxHp", "pAttack"];
-	for (var i = 0; i < fields.length; i++) {
-		this[fields[i]] *= (1 + anotherStat[fields[i]]/100);
+	for (var i = 0; i < Statistics.fields.length; i++) {
+		this[Statistics.fields[i]] *= (1 + anotherStat[Statistics.fields[i]]/100);
 	}
 }
 

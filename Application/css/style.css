@@ -1,0 +1,10 @@
+
+input, select {
+    width: 13%;
+    margin-right: 2%;
+}
+label {
+    display: inline-block;
+    width: 17%;
+    text-align: right;
+}
