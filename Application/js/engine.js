@@ -35,7 +35,9 @@ function addStateToList() {
 			}
 		}
 	}
-	str += "}), []);\n";
+	var c = document.getElementById('conditions').value;
+	str += "}), [ Conditions['"+c+"'] ]);\n";
+	
 	
 	var e = document.getElementById('created-textarea');
 	e.value += str;
@@ -99,6 +101,15 @@ function addStatisticsConditionToList() {
 	
 	var e = document.getElementById('created-textarea');
 	e.value += str;
+}
+
+function populateConditionNames() {
+	var select = document.getElementById('conditions');
+	for (var p in Conditions) {
+		var opt = document.createElement('option');
+		opt.innerHTML = p;
+		select.appendChild(opt);
+	}
 }
 
 function parseNumberFromId(id) {
