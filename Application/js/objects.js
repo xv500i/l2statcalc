@@ -159,14 +159,20 @@ AlteredState.prototype.applies = function(character) {
 	return b;
 }
 
-function AlwaysCondition() {
+function Condition(name) {
+	this.name = name;
+}
+
+function AlwaysCondition(name) {
+	Condition.call(this);
 }
 
 AlwaysCondition.prototype.isSatisfied = function(character) {
 	return true;
 }
 
-function SetEquipmentCondition(equipmentNamesRequired) {
+function SetEquipmentCondition(name, equipmentNamesRequired) {
+	Condition.call(this);
 	this.equipmentNamesRequired = equipmentNamesRequired;
 }
 
@@ -178,6 +184,23 @@ SetEquipmentCondition.prototype.isSatisfied = function(character) {
 		i++;
 	}
 	return b;
+}
+
+function StatisticsCondition(name, minHp, maxHp, minCp, maxCp, minMp, maxMp) {
+	Condition.call(this);
+	this.maxCp = maxCp;
+	this.minCp = minCp;
+	this.maxMp = maxMp;
+	this.minMp = minMp;
+	this.maxHp = maxHp;
+	this.minHp = minHp;
+}
+
+StatisticsCondition.prototype.isSatisfied = function(character) {
+	var cp = character.cp / character.maxCp * 100;
+	var mp = character.mp / character.maxMp * 100;
+	var hp = character.hp / character.maxHp * 100;
+	return cp >= this.minCp && cp <= this.maxCp && mp >= this.minMp && mp <= this.maxMp && hp >= this.minHp && hp <= this.maxHp;
 }
 
 /*

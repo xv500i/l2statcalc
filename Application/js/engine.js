@@ -41,6 +41,70 @@ function addStateToList() {
 	e.value += str;
 }
 
-function createAlteredStateFromForm(formId) {
+function addSetEquipmentConditionToList() {
+	var name = document.getElementById("name").value;
+	if(name == "") {
+		alert("void name");
+		return;
+	}
+	
+	var eqs = document.getElementById("equipmentNamesRequired").value;
+	if(eqs == "") {
+		alert("void equipments required");
+		return;
+	}
+	
+	var str = "Conditions['" + name + "'] = new SetEquipmentCondition('" + name + "', [";
+	
+	var eqsSplit = eqs.split(",");
+	var first = true;
+	for (var i = 0; i < eqsSplit.length; i++) {
+		var key = eqsSplit[i].trim();
+		if (key != "") {
+			if (!first) { str += ", "; }
+			str += "'" + key + "'";
+			first = false;
+		}
+			
+	}
+	
+	str += "]);\n";
+	
+	var e = document.getElementById('created-textarea');
+	e.value += str;
+}
 
+function addStatisticsConditionToList() {
+	var name = document.getElementById("name").value;
+	if(name == "") {
+		alert("void name");
+		return;
+	}
+	
+	var eqs = document.getElementById("equipmentNamesRequired").value;
+	if(eqs == "") {
+		alert("void equipments required");
+		return;
+	}
+	
+	minHp = parseNumberFromId("minHp");
+	maxHp = parseNumberFromId("maxHp");
+	minCp = parseNumberFromId("minCp");
+	maxCp = parseNumberFromId("maxCp");
+	minMp = parseNumberFromId("minMp");
+	maxMp = parseNumberFromId("maxMp");
+	
+	
+	var str = "Conditions['" + name + "'] = new StatisticsCondition('" + name + "', "+minHp+", "+maxHp+", "+minCp+", "+maxCp+", "+minMp+", "+maxMp+");";
+	
+	var e = document.getElementById('created-textarea');
+	e.value += str;
+}
+
+function parseNumberFromId(id) {
+	var n = parseFloat(document.getElementById(id).value);
+	if (Number.isNaN(n)) {
+		n = 0;
+	}
+	return n;
 }

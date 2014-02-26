@@ -8,3 +8,7 @@ label {
     width: 17%;
     text-align: right;
 }
+
+.long {
+	width: 30%;
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>L2 Stat Calc</title>
+	<meta name="description" content="The HTML5 Statistics Calculator">
+	<meta name="author" content="Alex Soms Batalla">
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/engine.js"></script>
+	<script src="js/objects.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<h1>Conditions editor</h1>
+	</header>
+	<div id="form-add-equipment-condition">
+		<h2>Create set equipment condition</h2>
+		<form>
+			<fieldset>
+				<legend>General info</legend>
+				<label for="name">Name:</label><input type="text" id="name" required="required" autofocus="autofocus"/>
+				<label for="equipmentNamesRequired">Equipment names:</label><input class="long" size="20" type="text" id="equipmentNamesRequired" required="required"/>
+			</fieldset>
+			<button onclick="addSetEquipmentConditionToList(); return false;">Create</button>
+		</form>
+	</div>
+	<div id="form-add-statistics-condition">
+		<h2>Create statistics condition</h2>
+		<form>
+			<fieldset>
+				<legend>General info</legend>
+				<label for="name">Name:</label><input type="text" id="name" required="required" autofocus="autofocus"/>
+			</fieldset>
+			<fieldset>
+				<legend>Statistics added</legend>
+				<label for="maxCp">Max CP (%):</label><input type="number" id="maxCp" required="required" size="5" value="100" />
+				<label for="maxHp">Max HP (%):</label><input type="number" id="maxHp" required="required" size="5" value="100" />
+				<label for="maxMp">Max MP (%):</label><input type="number" id="maxMp" required="required" size="5" value="100" />
+				<label for="minCp">Min CP (%):</label><input type="number" id="minCp" required="required" size="5" value="0" />
+				<label for="minHp">Min HP (%):</label><input type="number" id="minHp" required="required" size="5" value="0" />
+				<label for="minMp">Min MP (%):</label><input type="number" id="minMp" required="required" size="5" value="0" />
+			</fieldset>
+			<button onclick="addStatisticsConditionToList(); return false;">Create</button>
+		</form>
+	</div>
+	<div id="created">
+		<h2>Conditions created</h2>
+<textarea id="created-textarea" cols="100" rows="10" >
+</textarea>
+	</div>
+	<main>		
+	</main>
+	<footer>
+		<p>2014&copy; - Alex Soms Batalla</p>
+	</footer>
+</body>
+</html>
