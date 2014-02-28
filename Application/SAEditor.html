@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>L2 Stat Calc</title>
+	<meta name="description" content="The HTML5 Statistics Calculator">
+	<meta name="author" content="Alex Soms Batalla">
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/engine.js"></script>
+	<script src="js/objects.js"></script>
+	<script src="js/conditions_data.js"></script>
+	<script src="js/altered_states_data.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<h1>SA editor</h1>
+	</header>
+	<div id="form-add-altered-state">
+		<h2>Create new SA</h2>
+		<form>
+			<fieldset>
+				<legend>General info</legend>
+				<label for="name">Name:</label><input type="text" id="name" required="required" autofocus="autofocus"/>
+				<label for="altered_state">Altered state:</label><select id="altered_state" ></select>
+			</fieldset>
+			<button onclick="addSAToList(); return false;">Create</button>
+		</form>
+	</div>
+	<div id="created">
+		<h2>SAs created</h2>
+<textarea id="created-textarea" cols="100" rows="10" >
+</textarea>
+	</div>
+	<script>
+		populateAlteredStatesNames();
+	</script>
+	<footer>
+		<p>2014&copy; - Alex Soms Batalla</p>
+	</footer>
+</body>
+</html>

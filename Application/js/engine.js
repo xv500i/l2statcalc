@@ -43,6 +43,21 @@ function addStateToList() {
 	e.value += str;
 }
 
+function addSAToList() {
+	
+	var name = document.getElementById("name").value;
+	if(name == "") {
+		alert("void name");
+		return;
+	}
+	var as = document.getElementById("altered_state").value;
+	var str = "SAs['" + name + "'] = new SA(";
+	str += "'" + name + "', AlteredStates['" + as + "']);\n";
+	
+	var e = document.getElementById('created-textarea');
+	e.value += str;
+}
+
 function addSetEquipmentConditionToList() {
 	var name = document.getElementById("name").value;
 	if(name == "") {
@@ -106,6 +121,15 @@ function addStatisticsConditionToList() {
 function populateConditionNames() {
 	var select = document.getElementById('conditions');
 	for (var p in Conditions) {
+		var opt = document.createElement('option');
+		opt.innerHTML = p;
+		select.appendChild(opt);
+	}
+}
+
+function populateAlteredStatesNames() {
+	var select = document.getElementById('altered_state');
+	for (var p in AlteredStates) {
 		var opt = document.createElement('option');
 		opt.innerHTML = p;
 		select.appendChild(opt);

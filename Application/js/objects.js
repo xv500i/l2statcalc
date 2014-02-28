@@ -203,6 +203,11 @@ StatisticsCondition.prototype.isSatisfied = function(character) {
 	return cp >= this.minCp && cp <= this.maxCp && mp >= this.minMp && mp <= this.maxMp && hp >= this.minHp && hp <= this.maxHp;
 }
 
+function SA(name, alteredState) {
+	this.name = name;
+	this.alteredState = alteredState;
+}
+
 /*
 function Buff(name, StatisticsAdded, StatisticsProportional, condition) {
 	AlteredState.call(this, name, StatisticsAdded, StatisticsProportional, condition);
