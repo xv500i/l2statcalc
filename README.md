@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is about creating a simulator. This simulator works should be able to do calculations about the characters' statistics, combat effectiveness and so on.
+This project is about creating a game simulator. This simulator should be able to do calculations about the characters' statistics, combat effectiveness and so on.
 
 The main problem is that there is a lot of data to work with.
 
@@ -10,11 +10,12 @@ The main problem is that there is a lot of data to work with.
 
 The simulator has to provide:
 * Complete statistics calculation (i.e.: Physical attack, Magic attack, elemental resistances)
-* The use of shots
+* The use of all kinds of shots
 * Combat calculations with stereotyped (i.e.: reference) characters/monsters
+* Cast times for skills
 
 The simulator has to work with:
-* Equipment effects including Enchant, SA and Augments
+* Equipment effects including Enchant, SA, Sets and Augments
 * Altered states (i.e.: Buffs, Passives, Debuffs and Toggles) effects
 * Level effects
 * Dyes effects
@@ -26,11 +27,30 @@ The scope of this project is to develop a simulator. The simulator has to be exe
 
 Due to simulator data is static, we won't use any database at first.
 
+## Management
+
+### Tasks
+
+The project will be break down in several tasks. The manager will assign and validate each task. A complete list with the actual tasks will be published here.
+
+### Procedures
+
+Although using a repository, some considerations have to be taken when working with a few people team. Some workflows have been created in order to establish basic rules. The procedures can be found under the Documentation directory.
+
 ## Credits
 
-Here are the people who got involved in some way to this project
+The following roles has been considered for the project:
 
-* **Name**: *Javascript core programmer*
+| Role | Description | Needed skills |
+|---|---|---|
+| Core Programmer | They will build the editors and the application | HTML 5, Javascript (DOM, events, AOP) |
+| Data editor | They will input all the needed game data | Deep knowledge about the game and simple javascript knowledge |
+| Manager | Manages other people so that they can work together | Leader, procedural and general knowledge |
+
+Here are the people who got involved in some way to this project:
+
+* **Name**: *Core programmer*
+* **Name**: *Data editor*
 
 ## Legal aspects
 
