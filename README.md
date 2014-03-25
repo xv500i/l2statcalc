@@ -12,7 +12,7 @@ The simulator has to provide:
 * Complete statistics calculation (i.e.: Physical attack, Magic attack, elemental resistances)
 * The use of all kinds of shots
 * Combat calculations with stereotyped (i.e.: reference) characters/monsters
-* Cast times for skills
+* Buffs, Debuffs, pasives, etc.
 
 The simulator has to work with:
 * Equipment effects including Enchant, SA, Sets and Augments
