@@ -26,7 +26,7 @@
       <fontname>Dialog</fontname>
       <fontsize>12</fontsize>
       <defaultstereotypeview>0</defaultstereotypeview>
-      <activediagram>General task</activediagram>
+      <activediagram>Develop code</activediagram>
     </settings>
     <searchpath href="PROJECT_DIR" />
     <members>
@@ -45,13 +45,13 @@
       <member type="pgml"
               name="diagrams_Diagramadecolaboración.pgml"
               diagramclass="org.argouml.uml.diagram.collaboration.ui.UMLCollaborationDiagram"
-              diagramname="Colaboration" />
+              diagramname="Diagrama de colaboración" />
       <member type="pgml"
-              name="diagrams_Generaltask.pgml"
+              name="diagrams_Developmentactivity1.pgml"
               diagramclass="org.argouml.uml.diagram.activity.ui.UMLActivityDiagram"
               diagramname="General task" />
       <member type="pgml"
-              name="diagrams_Developcode.pgml"
+              name="diagrams_calculator_modelactivity1.pgml"
               diagramclass="org.argouml.uml.diagram.activity.ui.UMLActivityDiagram"
               diagramname="Develop code" />
       <member type="todo"
@@ -70,7 +70,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Mar 05 08:37:34 CET 2014'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Tue Mar 04 15:23:54 CET 2014'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -2271,7 +2271,7 @@
             <UML:SignalEvent xmi.id = '-64--88-1--119--4eef5474:1448d553641:-8000:0000000000000BF8'
               name = 'reassignate' isSpecification = 'false'/>
             <UML:SignalEvent xmi.id = '-64--88-1--119--4eef5474:1448d553641:-8000:0000000000000BFB'
-              name = 'validate' isSpecification = 'false'/>
+              name = 'valitdate' isSpecification = 'false'/>
             <UML:SignalEvent xmi.id = '-64--88-1--119--4eef5474:1448d553641:-8000:0000000000000BFC'
               name = 'is correct?' isSpecification = 'false'/>
             <UML:SignalEvent xmi.id = '-64--88-1--119--4eef5474:1448d553641:-8000:0000000000000BFD'
@@ -9433,7 +9433,7 @@
   </group>
 </pgml>
 <pgml description="org.argouml.uml.diagram.collaboration.ui.UMLCollaborationDiagram|127-0-0-1--1dff8bff:1448d3f4c6b:-8000:0000000000000BAF"
-      name="Colaboration"
+      name="Diagrama de colaboración"
 >
   <group name="Fig0"
        description="org.argouml.uml.diagram.collaboration.ui.FigClassifierRole[56, 144, 90, 50]pathVisible=false;stereotypeView=0;"
@@ -9696,7 +9696,7 @@
                         offset="10" />
     </private>
     <path name="Fig3.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -9899,7 +9899,7 @@
                         offset="10" />
     </private>
     <path name="Fig6.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -9964,7 +9964,7 @@
                         offset="10" />
     </private>
     <path name="Fig7.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -10029,7 +10029,7 @@
                         offset="10" />
     </private>
     <path name="Fig8.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -10162,7 +10162,7 @@
                         offset="10" />
     </private>
     <path name="Fig10.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -10225,7 +10225,7 @@
                         offset="10" />
     </private>
     <path name="Fig11.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -10580,7 +10580,7 @@
                         offset="10" />
     </private>
     <path name="Fig5.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -10611,7 +10611,7 @@
                         offset="23" />
     </private>
     <path name="Fig6.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -10674,7 +10674,7 @@
                         offset="27" />
     </private>
     <path name="Fig8.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -10747,7 +10747,7 @@
                         offset="10" />
     </private>
     <path name="Fig10.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -10778,7 +10778,7 @@
                         offset="17" />
     </private>
     <path name="Fig11.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -10813,7 +10813,7 @@
                         offset="29" />
     </private>
     <path name="Fig12.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -10844,7 +10844,7 @@
                         offset="28" />
     </private>
     <path name="Fig13.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -11057,7 +11057,7 @@ by anyone</text>
                         offset="10" />
     </private>
     <path name="Fig3.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -11090,7 +11090,7 @@ by anyone</text>
                         offset="10" />
     </private>
     <path name="Fig4.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -11340,7 +11340,7 @@ to proove you solution</text>
                         offset="10" />
     </private>
     <path name="Fig8.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -11403,7 +11403,7 @@ to proove you solution</text>
                         offset="10" />
     </private>
     <path name="Fig10.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -11434,7 +11434,7 @@ to proove you solution</text>
                         offset="10" />
     </private>
     <path name="Fig11.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -11467,7 +11467,7 @@ to proove you solution</text>
                         offset="10" />
     </private>
     <path name="Fig12.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -11532,7 +11532,7 @@ to proove you solution</text>
                         offset="10" />
     </private>
     <path name="Fig14.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -11565,7 +11565,7 @@ to proove you solution</text>
                         offset="10" />
     </private>
     <path name="Fig15.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -11671,7 +11671,7 @@ the code</text>
                         offset="10" />
     </private>
     <path name="Fig17.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -11774,7 +11774,7 @@ the code</text>
                         offset="10" />
     </private>
     <path name="Fig19.0"
-      description="org.argouml.gefext.ArgoFigPoly"
+      description="org.tigris.gef.presentation.FigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
