@@ -26,7 +26,7 @@
       <fontname>Dialog</fontname>
       <fontsize>12</fontsize>
       <defaultstereotypeview>0</defaultstereotypeview>
-      <activediagram>General task</activediagram>
+      <activediagram>Class Diagram</activediagram>
     </settings>
     <searchpath href="PROJECT_DIR" />
     <members>
@@ -43,7 +43,7 @@
               diagramclass="org.argouml.uml.diagram.deployment.ui.UMLDeploymentDiagram"
               diagramname="Deploy Diagram" />
       <member type="pgml"
-              name="diagrams_Diagramadecolaboración.pgml"
+              name="diagrams_Colaboration.pgml"
               diagramclass="org.argouml.uml.diagram.collaboration.ui.UMLCollaborationDiagram"
               diagramname="Colaboration" />
       <member type="pgml"
@@ -70,7 +70,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Mar 05 08:37:34 CET 2014'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Mar 27 22:18:40 CET 2014'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -1215,7 +1215,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:000000000000086B'
@@ -1230,7 +1230,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:000000000000086E'
@@ -1245,7 +1245,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:0000000000000871'
@@ -1260,7 +1260,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:0000000000000874'
@@ -1275,7 +1275,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:0000000000000877'
@@ -1290,7 +1290,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:000000000000087A'
@@ -1305,7 +1305,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:000000000000087D'
@@ -1320,7 +1320,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:0000000000000880'
@@ -1335,7 +1335,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:0000000000000883'
@@ -1350,7 +1350,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:0000000000000886'
@@ -1365,7 +1365,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:0000000000000889'
@@ -1380,7 +1380,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:000000000000088C'
@@ -1395,7 +1395,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:000000000000088F'
@@ -1410,7 +1410,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:0000000000000892'
@@ -1425,7 +1425,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:0000000000000895'
@@ -1440,7 +1440,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:0000000000000898'
@@ -1455,7 +1455,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:000000000000089B'
@@ -1470,7 +1470,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:000000000000089E'
@@ -1485,7 +1485,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:00000000000008A1'
@@ -1500,7 +1500,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:00000000000008A4'
@@ -1515,7 +1515,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:00000000000008A7'
@@ -1530,7 +1530,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:00000000000008AA'
@@ -1545,7 +1545,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:00000000000008AD'
@@ -1560,7 +1560,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:00000000000008B0'
@@ -1575,7 +1575,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:00000000000008B3'
@@ -1590,7 +1590,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:00000000000008B6'
@@ -1605,7 +1605,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:00000000000008B9'
@@ -1620,7 +1620,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:00000000000008BC'
@@ -1635,7 +1635,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:00000000000008BF'
@@ -1650,7 +1650,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:00000000000008C2'
@@ -1665,7 +1665,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:00000000000008C5'
@@ -1680,7 +1680,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
                 <UML:Attribute xmi.id = '127-0-0-1--6afd1186:1425a9582e6:-8000:00000000000008C8'
@@ -1695,7 +1695,7 @@
                     </UML:Multiplicity>
                   </UML:StructuralFeature.multiplicity>
                   <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                    <UML:Class xmi.idref = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
               </UML:Classifier.feature>
@@ -1787,6 +1787,9 @@
                 </UML:Attribute>
               </UML:Classifier.feature>
             </UML:Class>
+            <UML:Class xmi.id = '-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15'
+              name = 'Number' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+              isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
           </UML:Namespace.ownedElement>
         </UML:Package>
         <UML:Package xmi.id = '127-0-0-1--7530c7a6:1448d043bce:-8000:0000000000000BA2'
@@ -2540,7 +2543,7 @@
       name="Class Diagram"
 >
   <group name="Fig0"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1298, 824, 152, 594]pathVisible=false;stereotypeView=0;operationsVisible=false;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1298, 824, 159, 594]pathVisible=false;stereotypeView=0;operationsVisible=false;attributesVisible=true;"
        href="127-0-0-1--6afd1186:1425a9582e6:-8000:0000000000000866"
        fill="1"
        fillcolor="255 255 200"
@@ -2553,7 +2556,7 @@
     <rectangle name="Fig0.0"
       x="1298"
       y="824"
-      width="152"
+      width="159"
       height="594"
       fill="1"
       fillcolor="255 255 200"
@@ -2563,7 +2566,7 @@
     <text name="Fig0.1"
       x="1299"
       y="825"
-      width="150"
+      width="157"
       height="23"
       fill="0"
       fillcolor="255 255 200"
@@ -2602,7 +2605,7 @@
     <rectangle name="Fig0.3"
       x="1298"
       y="848"
-      width="152"
+      width="159"
       height="1"
       fill="1"
       fillcolor="black"
@@ -2610,7 +2613,7 @@
       strokecolor="black"
     />
     <group name="Fig0.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1299, 849, 150, 569]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1299, 849, 157, 569]"
          href="127-0-0-1--6afd1186:1425a9582e6:-8000:0000000000000866"
          fill="0"
          fillcolor="255 255 200"
@@ -2623,7 +2626,7 @@
       <rectangle name="Fig0.4.0"
         x="1299"
         y="849"
-        width="150"
+        width="157"
         height="569"
         fill="0"
         fillcolor="white"
@@ -2633,7 +2636,7 @@
       <text name="Fig0.4.1"
         x="1299"
         y="849"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2645,11 +2648,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >cp : Integer</text>
+      >cp : Number</text>
       <text name="Fig0.4.2"
         x="1299"
         y="866"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2661,11 +2664,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >maxCp : Integer</text>
+      >maxCp : Number</text>
       <text name="Fig0.4.3"
         x="1299"
         y="883"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2677,11 +2680,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >mp : Integer</text>
+      >mp : Number</text>
       <text name="Fig0.4.4"
         x="1299"
         y="900"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2693,11 +2696,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >maxMp : Integer</text>
+      >maxMp : Number</text>
       <text name="Fig0.4.5"
         x="1299"
         y="917"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2709,11 +2712,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >hp : Integer</text>
+      >hp : Number</text>
       <text name="Fig0.4.6"
         x="1299"
         y="934"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2725,11 +2728,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >maxMp : Integer</text>
+      >maxMp : Number</text>
       <text name="Fig0.4.7"
         x="1299"
         y="951"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2741,11 +2744,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >pAttack : Integer</text>
+      >pAttack : Number</text>
       <text name="Fig0.4.8"
         x="1299"
         y="968"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2757,11 +2760,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >mAttack : Integer</text>
+      >mAttack : Number</text>
       <text name="Fig0.4.9"
         x="1299"
         y="985"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2773,11 +2776,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >pSpeed : Integer</text>
+      >pSpeed : Number</text>
       <text name="Fig0.4.10"
         x="1299"
         y="1002"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2789,11 +2792,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >mSpeed : Integer</text>
+      >mSpeed : Number</text>
       <text name="Fig0.4.11"
         x="1299"
         y="1019"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2805,11 +2808,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >speed : Integer</text>
+      >speed : Number</text>
       <text name="Fig0.4.12"
         x="1299"
         y="1036"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2821,11 +2824,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >evasion : Integer</text>
+      >evasion : Number</text>
       <text name="Fig0.4.13"
         x="1299"
         y="1053"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2837,11 +2840,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >accuracy : Integer</text>
+      >accuracy : Number</text>
       <text name="Fig0.4.14"
         x="1299"
         y="1070"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2853,11 +2856,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >pDefense : Integer</text>
+      >pDefense : Number</text>
       <text name="Fig0.4.15"
         x="1299"
         y="1087"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2869,11 +2872,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >mDefense : Integer</text>
+      >mDefense : Number</text>
       <text name="Fig0.4.16"
         x="1299"
         y="1104"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2885,11 +2888,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >pEvasion : Integer</text>
+      >pEvasion : Number</text>
       <text name="Fig0.4.17"
         x="1299"
         y="1121"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2901,11 +2904,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >mEvasion : Integer</text>
+      >mEvasion : Number</text>
       <text name="Fig0.4.18"
         x="1299"
         y="1138"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2917,11 +2920,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >pCriticalChance : Integer</text>
+      >pCriticalChance : Number</text>
       <text name="Fig0.4.19"
         x="1299"
         y="1155"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2933,11 +2936,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >mCriticalChance : Integer</text>
+      >mCriticalChance : Number</text>
       <text name="Fig0.4.20"
         x="1299"
         y="1172"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2949,11 +2952,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >pCriticalDamage : Integer</text>
+      >pCriticalDamage : Number</text>
       <text name="Fig0.4.21"
         x="1299"
         y="1189"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2965,11 +2968,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >mCriticalDamage : Integer</text>
+      >mCriticalDamage : Number</text>
       <text name="Fig0.4.22"
         x="1299"
         y="1206"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2981,11 +2984,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >INT : Integer</text>
+      >INT : Number</text>
       <text name="Fig0.4.23"
         x="1299"
         y="1223"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -2997,11 +3000,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >WIT : Integer</text>
+      >WIT : Number</text>
       <text name="Fig0.4.24"
         x="1299"
         y="1240"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -3013,11 +3016,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >MEN : Integer</text>
+      >MEN : Number</text>
       <text name="Fig0.4.25"
         x="1299"
         y="1257"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -3029,11 +3032,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >STR : Integer</text>
+      >STR : Number</text>
       <text name="Fig0.4.26"
         x="1299"
         y="1274"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -3045,11 +3048,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >DEX : Integer</text>
+      >DEX : Number</text>
       <text name="Fig0.4.27"
         x="1299"
         y="1291"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -3061,11 +3064,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >CON : Integer</text>
+      >CON : Number</text>
       <text name="Fig0.4.28"
         x="1299"
         y="1308"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -3077,11 +3080,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >fire : Integer</text>
+      >fire : Number</text>
       <text name="Fig0.4.29"
         x="1299"
         y="1325"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -3093,11 +3096,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >holy : Integer</text>
+      >holy : Number</text>
       <text name="Fig0.4.30"
         x="1299"
         y="1342"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -3109,11 +3112,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >dark : Integer</text>
+      >dark : Number</text>
       <text name="Fig0.4.31"
         x="1299"
         y="1359"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -3125,11 +3128,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >water : Integer</text>
+      >water : Number</text>
       <text name="Fig0.4.32"
         x="1299"
         y="1376"
-        width="150"
+        width="157"
         height="17"
         fill="0"
         fillcolor="255 255 200"
@@ -3141,11 +3144,11 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >wind : Integer</text>
+      >wind : Number</text>
       <text name="Fig0.4.33"
         x="1299"
         y="1393"
-        width="150"
+        width="157"
         height="23"
         fill="0"
         fillcolor="255 255 200"
@@ -3157,7 +3160,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >earth : Integer</text>
+      >earth : Number</text>
     </group>
     <rectangle name="Fig0.5"
       x="1298"
@@ -8862,6 +8865,134 @@
       <lineto x="1032"
               y="1584" />
     </path>
+  </group>
+  <group name="Fig64"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1488, 856, 66, 46]pathVisible=false;stereotypeView=0;operationsVisible=false;attributesVisible=true;"
+       href="-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15"
+       fill="1"
+       fillcolor="255 255 200"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig64.0"
+      x="1488"
+      y="856"
+      width="66"
+      height="46"
+      fill="1"
+      fillcolor="255 255 200"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig64.1"
+      x="1489"
+      y="857"
+      width="64"
+      height="23"
+      fill="0"
+      fillcolor="255 255 200"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >Number</text>
+    <group name="Fig64.2"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1489, 857, 64, 0]"
+         href="-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15"
+         fill="0"
+         fillcolor="255 255 200"
+         stroke="0"
+         strokecolor="black"
+         visibility="0"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig64.2.0"
+        x="1489"
+        y="857"
+        width="64"
+        height="0"
+        fill="0"
+        fillcolor="255 255 200"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+    <rectangle name="Fig64.3"
+      x="1488"
+      y="880"
+      width="66"
+      height="1"
+      fill="1"
+      fillcolor="black"
+      stroke="1"
+      strokecolor="black"
+    />
+    <group name="Fig64.4"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1489, 881, 64, 21]"
+         href="-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15"
+         fill="0"
+         fillcolor="255 255 200"
+         stroke="0"
+         strokecolor="black"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig64.4.0"
+        x="1489"
+        y="881"
+        width="64"
+        height="21"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+    <rectangle name="Fig64.5"
+      x="1488"
+      y="901"
+      width="66"
+      height="1"
+      fill="1"
+      fillcolor="black"
+      stroke="1"
+      strokecolor="black"
+      visibility="0"
+    />
+    <group name="Fig64.6"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1489, 902, 64, 21]"
+         href="-64--88-1--124--7cea28f1:145055d5fbd:-8000:0000000000000C15"
+         fill="0"
+         fillcolor="255 255 200"
+         stroke="0"
+         strokecolor="black"
+         visibility="0"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig64.6.0"
+        x="1489"
+        y="902"
+        width="64"
+        height="21"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        visibility="0"
+      />
+    </group>
   </group>
 </pgml>
 <pgml description="org.argouml.uml.diagram.deployment.ui.UMLDeploymentDiagram|127-0-0-1--7530c7a6:1448d043bce:-8000:0000000000000BA2"

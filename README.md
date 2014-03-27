@@ -37,6 +37,10 @@ The project will be break down in several tasks. The manager will assign and val
 
 Although using a repository, some considerations have to be taken when working with a few people team. Some workflows have been created in order to establish basic rules. The procedures can be found under the Documentation directory.
 
+### Testing
+
+We will perform unit testing for each class or module with QUnit.
+
 ## Credits
 
 The following roles has been considered for the project:
