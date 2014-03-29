@@ -39,7 +39,7 @@ Although using a repository, some considerations have to be taken when working w
 
 ### Testing
 
-We will perform unit testing for each class or module with QUnit.
+We will perform unit testing for each class or module with QUnit (http://qunitjs.com).
 
 ## Credits
 
