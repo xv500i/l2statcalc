@@ -59,7 +59,7 @@ function addSAToList() {
 }
 
 function addSetEquipmentConditionToList() {
-	var name = document.getElementById("name").value;
+	var name = document.getElementById("name-set").value;
 	if(name == "") {
 		alert("void name");
 		return;
@@ -92,15 +92,9 @@ function addSetEquipmentConditionToList() {
 }
 
 function addStatisticsConditionToList() {
-	var name = document.getElementById("name").value;
+	var name = document.getElementById("name-statistics").value;
 	if(name == "") {
 		alert("void name");
-		return;
-	}
-	
-	var eqs = document.getElementById("equipmentNamesRequired").value;
-	if(eqs == "") {
-		alert("void equipments required");
 		return;
 	}
 	
@@ -112,7 +106,7 @@ function addStatisticsConditionToList() {
 	maxMp = parseNumberFromId("maxMp");
 	
 	
-	var str = "Conditions['" + name + "'] = new StatisticsCondition('" + name + "', "+minHp+", "+maxHp+", "+minCp+", "+maxCp+", "+minMp+", "+maxMp+");";
+	var str = "Conditions['" + name + "'] = new StatisticsCondition('" + name + "', "+minHp+", "+maxHp+", "+minCp+", "+maxCp+", "+minMp+", "+maxMp+");\n";
 	
 	var e = document.getElementById('created-textarea');
 	e.value += str;
