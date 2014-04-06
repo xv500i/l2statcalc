@@ -1,4 +1,6 @@
 function addStateToList() {
+
+	// TODO: Multiple choice
 	
 	var name = document.getElementById("name").value;
 	if(name == "") {
@@ -38,21 +40,6 @@ function addStateToList() {
 	var c = document.getElementById('conditions').value;
 	str += "}), [ Conditions['"+c+"'] ]);\n";
 	
-	
-	var e = document.getElementById('created-textarea');
-	e.value += str;
-}
-
-function addSAToList() {
-	
-	var name = document.getElementById("name").value;
-	if(name == "") {
-		alert("void name");
-		return;
-	}
-	var as = document.getElementById("altered_state").value;
-	var str = "SAs['" + name + "'] = new SA(";
-	str += "'" + name + "', AlteredStates['" + as + "']);\n";
 	
 	var e = document.getElementById('created-textarea');
 	e.value += str;

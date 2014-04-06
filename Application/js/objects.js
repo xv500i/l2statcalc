@@ -53,30 +53,31 @@ Statistics.prototype.combineProportional = function(anotherStat) {
 	}
 }
 
-/*
-
 function Character() {
 	this.basicStats = new Statistics({});
-	
 	this.calculatedStats = null;
-	this.leftWeapon = null;
-	this.rightWeapon = null;
+	
+	this.shield = null;
+	this.weapon = null;
+	this.belt = null;
 	this.helmet = null;
+	this.hairAccesory = null;
+	this.necklace = null;
+	this.earing = [null, null];
+	this.bracelet = null;
+	this.helmet = null;
+	this.gloves = null;
 	this.boots = null;
+	this.ring = [null, null];
 	this.body = null;
 	this.legs = null;
-	this.gloves = null;
-	this.necklace = null;
-	this.leftRing = null;
-	this.rightRing = null;
-	this.leftEaring = null;
-	this.righEaring = null;
+	this.cloak = null;
 	
-	this.buffs = new Array();
-	this.debuffs = new Array();
-	this.pasives = new Array();
-	this.lvl = 1;
-	this.gender = "male";
+	this.affectedBy = new Array();
+	this.lvl = 40;
+	this.class = "Arbalester";
+	this.gender = "Female";
+	this.currentAction = "Stand";
 }
 
 Character.prototype.calculate = function() {
@@ -86,19 +87,18 @@ Character.prototype.calculate = function() {
 	for(var i = 0; i < eqs.length; i++) {
 		var eq = eqs[i];
 		if (eq != null) {
-			c.combine(eq.StatisticsAdded);
-			p.combine(eq.StatisticsProportional);
+			c.combine(eq.equipmentAlteredState.bonus.StatisticsAdded);
+			p.combine(eq.equipmentAlteredState.StatisticsProportional);
 		}
 	}
-	for(var i = 0; i < this.buffs.length; i++) {
-		var eq = this.buffs[i];
-		c.combine(eq.StatisticsAdded);
-		p.combine(eq.StatisticsProportional);		
+	for(var i = 0; i < this.affectedBy.length; i++) {
+		var altState = this.affectedBy[i];
+		if (altState.applies(this)) {
+			c.combine(altState.bonus.StatisticsAdded);
+			p.combine(altState.bonus.StatisticsProportional);		
+		}
 	}
 	
-	// check buffs
-	// check debuffs
-	// check pasives
 	this.calculatedStats = c;
 	this.calculatedStats.combine(this.basicStats);
 	this.calculatedStats.combineProportional(p);
@@ -117,7 +117,6 @@ Character.prototype.hasEquiped = function(name) {
 	}
 	return b;
 }
-*/
 
 /*
 function Skill() {
@@ -164,17 +163,21 @@ function Condition(name) {
 }
 
 function AlwaysCondition(name) {
-	Condition.call(this);
+	Condition.call(this, name);
 }
+
+AlwaysCondition.prototype = Object.create(Condition.prototype);
 
 AlwaysCondition.prototype.isSatisfied = function(character) {
 	return true;
 }
 
 function SetEquipmentCondition(name, equipmentNamesRequired) {
-	Condition.call(this);
+	Condition.call(this, name);
 	this.equipmentNamesRequired = equipmentNamesRequired;
 }
+
+SetEquipmentCondition.prototype = Object.create(Condition.prototype);
 
 SetEquipmentCondition.prototype.isSatisfied = function(character) {
 	var b = true;
@@ -201,11 +204,6 @@ StatisticsCondition.prototype.isSatisfied = function(character) {
 	var mp = character.mp / character.maxMp * 100;
 	var hp = character.hp / character.maxHp * 100;
 	return cp >= this.minCp && cp <= this.maxCp && mp >= this.minMp && mp <= this.maxMp && hp >= this.minHp && hp <= this.maxHp;
-}
-
-function SA(name, alteredState) {
-	this.name = name;
-	this.alteredState = alteredState;
 }
 
 /*
