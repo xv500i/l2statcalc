@@ -65,7 +65,6 @@ function Character() {
 	this.necklace = null;
 	this.earing = [null, null];
 	this.bracelet = null;
-	this.helmet = null;
 	this.gloves = null;
 	this.boots = null;
 	this.ring = [null, null];
@@ -83,7 +82,7 @@ function Character() {
 Character.prototype.calculate = function() {
 	var c = new Statistics({});
 	var p = new Statistics({});
-	var eqs = [this.leftWeapon, this.rightWeapon, this.helmet, this.boots, this.body, this.legs, this.gloves, this.necklace, this.leftRing, this.rightRing, this.leftEarng, this.rightEaring];
+	var eqs = [this.shield, this.weapon, this.belt, this.helmet, this.hairAccesory, this.necklace, this.earing[0], this.earing[1], this.bracelet, this.gloves, this.boots, this.ring[0], this.ring[1], this.body, this.legs, this.cloak];
 	for(var i = 0; i < eqs.length; i++) {
 		var eq = eqs[i];
 		if (eq != null) {
@@ -106,7 +105,7 @@ Character.prototype.calculate = function() {
 }
 
 Character.prototype.hasEquiped = function(name) {
-	var eqs = [this.leftWeapon, this.rightWeapon, this.helmet, this.boots, this.body, this.legs, this.gloves, this.necklace, this.leftRing, this.rightRing, this.leftEarng, this.rightEaring];
+	var eqs = [this.shield, this.weapon, this.belt, this.helmet, this.hairAccesory, this.necklace, this.earing[0], this.earing[1], this.bracelet, this.gloves, this.boots, this.ring[0], this.ring[1], this.body, this.legs, this.cloak];
 	var i = 0;
 	var b = false;
 	while (!b && i < eqs.length) {
