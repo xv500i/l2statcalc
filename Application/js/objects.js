@@ -1,3 +1,19 @@
+/**
+ * Class definition for the simulator model.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ */
+
+/**
+ * Statistics object constructor. Creates a Statistics objects with the members specified.
+ * If not specified, the member gets a 0 value.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @constructor
+ * @param {Array} stateArray - Associative array containing 0 or more items in Statistics.Fields
+ * @returns {Statistics} - The object populated with the information on stateArray
+ * @since 0.1
+ */
 function Statistics(stateArray) {
 	this.cp = 0;
 	this.maxCp = 0;
@@ -41,18 +57,43 @@ function Statistics(stateArray) {
 
 Statistics.fields = ["cp", "maxCp", "hp", "maxHp", "mp", "maxMp", "pAttack", "mAttack", "speed", "pSpeed", "cSpeed", "pCriticChance", "mCriticChance", "pCriticDamage", "mCriticDamage", "pDefense", "mDefense", "pEvasion", "mEvasion", "pAccuracy", "mAccuracy", "INT", "MEN", "CON", "STR", "DEX", "WIT", "fire", "water", "wind", "earth", "dark", "holy"];
 
+/**
+ * Combines (adds) the members of two Statistics objects.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @param {Statistics} anotherStat - The stat to be combined with this
+ * @returns {this}
+ * @since 0.1
+ */
 Statistics.prototype.combine = function(anotherStat) {
 	for (var i = 0; i < Statistics.fields.length; i++) {
 		this[Statistics.fields[i]] += anotherStat[Statistics.fields[i]];
 	}
 }
 
+/**
+ * Combines (multiplies by %) the members of two Statistics objects.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @param {Statistics} anotherStat - The stat to be combined with this
+ * @returns {this}
+ * @since 0.1
+ */
 Statistics.prototype.combineProportional = function(anotherStat) {
 	for (var i = 0; i < Statistics.fields.length; i++) {
 		this[Statistics.fields[i]] *= (1 + anotherStat[Statistics.fields[i]]/100);
 	}
 }
 
+/**
+ * Character object constructor. The character created has any object equipped.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @constructor
+ * @abstract
+ * @returns {Character} - The object created
+ * @since 0.1
+ */
 function Character() {
 	this.basicStats = new Statistics({});
 	this.calculatedStats = null;
@@ -79,6 +120,13 @@ function Character() {
 	this.currentAction = "Stand";
 }
 
+/**
+ * Updates the statistics of the character.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @returns {this}
+ * @since 0.1
+ */
 Character.prototype.calculate = function() {
 	var c = new Statistics({});
 	var p = new Statistics({});
@@ -104,6 +152,14 @@ Character.prototype.calculate = function() {
 	
 }
 
+/**
+ * Tests if a character has a given equipment.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @param {String} name - The name of the equipment
+ * @returns {Boolean} - The character has equipped somewhere an equipment with the given name
+ * @since 0.1
+ */
 Character.prototype.hasEquiped = function(name) {
 	var eqs = [this.shield, this.weapon, this.belt, this.helmet, this.hairAccesory, this.necklace, this.earing[0], this.earing[1], this.bracelet, this.gloves, this.boots, this.ring[0], this.ring[1], this.body, this.legs, this.cloak];
 	var i = 0;
@@ -135,11 +191,34 @@ function PasiveSkill() {
 PasiveSkill.prototype = Object.create(Skill.prototype);
 */
 
+/**
+ * Bonus object constructor. The Bonus object contains two statistics objects.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @constructor
+ * @param {Statistics} statisticsAdded - The scalar state
+ * @param {Statistics} statisticsProportional - The proportional state
+ * @returns {this}
+ * @since 0.1
+ */
 function Bonus(statisticsAdded, statisticsProportional) {
 	this.statisticsAdded = statisticsAdded;
 	this.statisticsProportional = statisticsProportional;
 }
 
+/**
+ * AlteredState object constructor. Contains the information about the bonus, name, type and conditions
+ * to apply the state.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @constructor
+ * @param {String} name - The name of the AlteredState
+ * @param {String} type - The type of the AlteredState
+ * @param {Statistics} statisticsAdded - The scalar Statistics
+ * @param {Statistics} statisticsProportional - The proportional Statistics
+ * @returns {this}
+ * @since 0.1
+ */
 function AlteredState(name, type, statisticsAdded, statisticsProportional, conditions) {
 	this.name = name;
 	this.type = type;
@@ -147,6 +226,14 @@ function AlteredState(name, type, statisticsAdded, statisticsProportional, condi
 	this.conditions = conditions;
 }
 
+/**
+ * Tests if the bonus should be applied to a given Character.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @param {Character} character - The character to test the appliance of the bonuses.
+ * @returns {Bolean} - The bonus should apply
+ * @since 0.1
+ */
 AlteredState.prototype.applies = function(character) {
 	var b = true;
 	var i = 0;
@@ -157,27 +244,69 @@ AlteredState.prototype.applies = function(character) {
 	return b;
 }
 
+/**
+ * Condition object constructor. It models the conditions to apply a bonus.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @constructor
+ * @param {String} name - The name of the condition
+ * @returns {this}
+ * @since 0.1
+ */
 function Condition(name) {
 	this.name = name;
 }
 
+/**
+ * AlwaysCondition object constructor. This condition is always fulfilled.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @constructor
+ * @param {String} name - The name of the condition
+ * @returns {this}
+ * @since 0.1
+ */
 function AlwaysCondition(name) {
 	Condition.call(this, name);
 }
-
 AlwaysCondition.prototype = Object.create(Condition.prototype);
 
+/**
+ * Tests the Condition.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @constructor
+ * @returns {Boolean} - The Condition should be applied
+ * @since 0.1
+ */
 AlwaysCondition.prototype.isSatisfied = function(character) {
 	return true;
 }
 
+/**
+ * SetEquipmentCondition object constructor. This condition is fulfilled when a list of equipments are equiped.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @constructor
+ * @param {String} name - The name of the condition
+ * @param {Array} equipmentNamesRequired - The names of the required equipments
+ * @returns {this}
+ * @since 0.1
+ */
 function SetEquipmentCondition(name, equipmentNamesRequired) {
 	Condition.call(this, name);
 	this.equipmentNamesRequired = equipmentNamesRequired;
 }
-
 SetEquipmentCondition.prototype = Object.create(Condition.prototype);
 
+/**
+ * Tests the Condition.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @constructor
+ * @returns {Boolean} - The Condition should be applied
+ * @since 0.1
+ */
 SetEquipmentCondition.prototype.isSatisfied = function(character) {
 	var b = true;
 	var i = 0;
@@ -188,6 +317,22 @@ SetEquipmentCondition.prototype.isSatisfied = function(character) {
 	return b;
 }
 
+/**
+ * StatisticsCondition object constructor. It fulfills based on Character's Statistics
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @constructor
+ * @param {String} name - The name of the condition
+ * @param {Number} minHP - The percent of minimum HP
+ * @param {Number} maxHP - The percent of maximum HP
+ * @param {Number} minMP - The percent of minimum MP
+ * @param {Number} maxMP - The percent of maximum MP
+ * @param {Number} minCP - The percent of minimum CP
+ * @param {Number} maxCP - The percent of maximum CP
+ * @returns {this}
+ * @since 0.1
+ */
+
 function StatisticsCondition(name, minHp, maxHp, minCp, maxCp, minMp, maxMp) {
 	Condition.call(this);
 	this.maxCp = maxCp;
@@ -197,7 +342,16 @@ function StatisticsCondition(name, minHp, maxHp, minCp, maxCp, minMp, maxMp) {
 	this.maxHp = maxHp;
 	this.minHp = minHp;
 }
+StatisticsCondition.prototype = Object.create(Condition.prototype);
 
+/**
+ * Tests the Condition.
+ * @version 0.1
+ * @author Alex Soms Batalla
+ * @constructor
+ * @returns {Boolean} - The Condition should be applied
+ * @since 0.1
+ */
 StatisticsCondition.prototype.isSatisfied = function(character) {
 	var cp = character.cp / character.maxCp * 100;
 	var mp = character.mp / character.maxMp * 100;
