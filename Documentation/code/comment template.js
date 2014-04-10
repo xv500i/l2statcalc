@@ -15,7 +15,7 @@
  * @todo
  * @see
  * @constructor (Mandatory)
- * @abstract
+ * @abstract (Mandatory)
  * @throws (Mandatory)
  * @param {Number} param1 - Description of the param (Mandatory)
  * @returns {String} - Description of the return (Mandatory)
@@ -27,8 +27,12 @@ function abc(param1) {
 
 /**
  * Variable description
- * @member
+ * @member (Mandatory)
  * @todo
- *
+ * @constant (Mandatory)
+ * @default (Mandatory)
+ * @readonly (Mandatory)
+ * @see
+ * @since (Mandatory)
  */
 var variable = "asb";
