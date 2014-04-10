@@ -41,6 +41,10 @@ Although using a repository, some considerations have to be taken when working w
 
 We will perform unit testing for each class or module with QUnit (http://qunitjs.com).
 
+### Documentation
+
+We will generate the documentation through commenting the code with special tags. The tags are used by JSDoc to generate a report. A subset of the overall tags that we will use can be checked at "/Documentation/code/comment template.js".
+
 ## Credits
 
 The following roles has been considered for the project:
